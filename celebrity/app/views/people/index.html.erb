@@ -1,0 +1,8 @@
+<h1>People</h1>
+
+<% @people.each do |post| %>
+  <%= post.name %><br>
+  
+<% end %>
+
+<%= link_to 'New name', people_new_name_path %>

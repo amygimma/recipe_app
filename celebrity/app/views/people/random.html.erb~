@@ -1,0 +1,4 @@
+random<br>
+<%= @person.name %>
+
+<%= link_to 'next', people_random_path %>

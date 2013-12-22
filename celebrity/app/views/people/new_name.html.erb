@@ -1,0 +1,15 @@
+<h1>Add Names</h1>
+
+<%= form_for :people, url: people_create_path do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, :autocomplete => :off %>
+  </p>
+  
+  <p>
+    <%= f.submit 'submit' %>
+  </p>
+  
+  <%= link_to 'Start Playing', people_random_path %>
+  
+<% end %>
